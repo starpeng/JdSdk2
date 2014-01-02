@@ -31,6 +31,7 @@
     <Target Name ="Compile">
         <MSBuild Projects="$(MSBuildProjectDirectory)\JdSdk2.sln" Targets="Build" Properties="Configuration=Release;" />
 		<Copy SourceFiles="$(MSBuildProjectDirectory)\Readme.txt"   DestinationFolder="$(BuildFolder)" />
+		<Copy SourceFiles="$(MSBuildProjectDirectory)\Readme.html"   DestinationFolder="$(BuildFolder)" />
     </Target>
 
     <Target Name="Package">
