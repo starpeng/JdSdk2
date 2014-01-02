@@ -1,11 +1,13 @@
 JdSdk2
 ======
 
-京东开放平台.NET版SDK
+京东开放平台.NET版SDK  
+本SDK代码完全根据京东官方JavaSdk自动生成。API部分代码结构一致。   
+所有Java Sdk中set get方法转换到.NET为属性，与类名称或子类名称同名的属性名称在前面加入下划线("_")以区分。        
 
-[最新版DLL下载](https://github.com/starpeng/JdSdk2/ "下载")
+[最新版DLL下载](https://github.com/starpeng/JdSdk2/releases "Release")
 
-[最新版源码下载](https://github.com/starpeng/JdSdk2/archive/master.zip "Surce")
+[最新版源码下载](https://github.com/starpeng/JdSdk2/archive/master.zip "Source")
 
 [问题反馈](https://github.com/starpeng/JdSdk2/issues/new "问题反馈")
 >使用Github中的Issue和Pull Request来反馈问题。  

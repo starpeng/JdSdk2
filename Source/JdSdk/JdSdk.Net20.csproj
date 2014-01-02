@@ -1,0 +1,2486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3113D66-9A77-487A-99F8-528C0F763C60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JdSdk</RootNamespace>
+    <AssemblyName>JdSdk</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\NET20\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build\NET20\</OutputPath>
+    <DefineConstants>TRACE;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>JdSdk2.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net20\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessToken.cs" />
+    <Compile Include="domain\after\ReturnGoods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\after\ReturnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\after\ReturnItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\category\AttValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\category\Category.cs" />
+    <Compile Include="domain\category\Group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\category\ShopCategoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\delivery\LogisticsCompanies.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\delivery\LogisticsCompany.cs" />
+    <Compile Include="domain\order\CouponDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\ItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderDetailInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderDetailInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderLbpPrintData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderPrintData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderPrintDataConsignee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderPrintDataWare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderSearchInfo.cs" />
+    <Compile Include="domain\order\OrderSoplPrintData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderSopPrintData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\OrderUserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\PrintResult.cs" />
+    <Compile Include="domain\order\UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\order\VatInvoiceInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\sellercat\ShopCategory.cs" />
+    <Compile Include="domain\vender\Vender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\ware\Sku.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\ware\Ware.cs" />
+    <Compile Include="domain\ware\WareAreaLimit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\ware\WarePropimg.cs" />
+    <Compile Include="domain\ware\WareTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\category\AttributeValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\category\WareAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\category\WareCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\cps\CPSSpreadHomeInfoModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\cps\JingdongrenWare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\cps\JingdongrenWareDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\cps\PromoteWare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\cps\PromoteWareDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\order\CanBuyAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\order\OrderCreateResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\recommend\FavoriteWare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\request\OrderCanBuyAreaRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\request\OrderCanBuyCityRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\request\OrderCanBuyProvinceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\request\OrderCanBuyTownRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\request\OrderCreateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\response\OrderCanBuyAreaResponse.cs" />
+    <Compile Include="domain\website\response\OrderCanBuyCityResponse.cs" />
+    <Compile Include="domain\website\response\OrderCanBuyProvinceResponse.cs" />
+    <Compile Include="domain\website\response\OrderCanBuyTownResponse.cs" />
+    <Compile Include="domain\website\response\OrderCreateResponse.cs" />
+    <Compile Include="domain\website\ware\Region.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\ware\Sku.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\ware\Ware.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain\website\ware\WareImg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JdRequestBase.cs" />
+    <Compile Include="Parser\DateTimeConverter.cs" />
+    <Compile Include="DefaultJdClient.cs" />
+    <Compile Include="DefaultJdLogger.cs" />
+    <Compile Include="IJdClient.cs" />
+    <Compile Include="IJdLogger.cs" />
+    <Compile Include="IJdRequest.cs" />
+    <Compile Include="IJdUploadRequest.cs" />
+    <Compile Include="OAuth.cs" />
+    <Compile Include="Parser\IJdParser.cs" />
+    <Compile Include="Parser\JdAttribute.cs" />
+    <Compile Include="Parser\JdJsonParser.cs" />
+    <Compile Include="Parser\JdXmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JdDictionary.cs" />
+    <Compile Include="JdException.cs" />
+    <Compile Include="JdObject.cs" />
+    <Compile Include="JdResponse.cs" />
+    <Compile Include="request\after\AfterSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\after\AfterStateUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\category\BrandsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\category\CategoryAttributeSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\category\CategoryAttributeValueSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\category\CategoryGroupSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\category\CategorySearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionActivityCodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionAdvdetailGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionCategoryinfoSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionGoodsCodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionMasterAccountGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionMasterBillSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPlanbaseinfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPlanbaseinfoQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPlandetailGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPlanlistSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPlanSaveRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotionactivityQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotiongoodQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotiongoodUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotionreportQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotionshopQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionPromotionshopUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionReportOverviewSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionReportWindowSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionShopCodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionZoneCodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\cps\UnionZoneInfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\delivery\DeliveryLogisticsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\delivery\EtmsTraceGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\delivery\EtmsWaybillcodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\delivery\EtmsWaybillSendRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\evaluation\ClubCommentsummaryGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\evaluation\ClubLastestcommentsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\evaluation\ClubLastestconsultionsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\Field.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzoneCategoryAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzoneCategoryQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzoneCategoryUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureIsreferencedRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureReplaceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzonePictureUploadRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\imgzone\ImgzoneUserinfoQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreaCityGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreaCountyGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreaIpQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreaProvinceGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreasGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\innertest\AreaTownGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheAccountGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheAccountIncome_expenseSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheBillDetailsSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheBillSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheGoodsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaichePopGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnBidRankGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnKeywordgroupListSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnMaterialLabelsSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanChannelCreateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanChannelModifyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanDetailGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanListSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanSearchCreateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnPlanSearchModifyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnScheduleBidDetailSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnScheduleFindScheduleCanUseRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnSpaceInfoSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\kuaiche\KuaicheZnSpacePageByTypeSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\market\VasSubscribeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareBrowsetobuyListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareBuytobuyListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareCatelogyAttributeListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareCombineListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePacksGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareProductCatelogyListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareProductDetailSearchListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareProductSearchListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareProductStockListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionActivitiesListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionActivitywareListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionCategorywareListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionIndexactivityGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionIndexactivityListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionsCatelogyidlistGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionSearchCatelogyListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionSeckillListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WarePromotionsListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\mobile\WareSelectedProvinceListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\LogisticsO2oOrderCarriageRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\LogisticsO2oOrderSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderFbpGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderFbpSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderLbpOutstorageRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderLbpPrintDataGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderLbpWaybillUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderLogisticsSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderOrderDeleteApplyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderPrintDataGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderPrintRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSoplOutstorageRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSoplPrintDataGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSoplWaybillUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSopOutstorageRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSopPrintDataGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderSopWaybillUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderVenderRemarkQueryByOrderIdRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OrderVenderRemarkUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OverseasOrderSopDeliveryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\order\OverseasOrderSopOutstorageRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\price\WarePriceGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\price\WarePromotionInfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\promotion\PromotionSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\sellercat\SellerCatAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\sellercat\SellerCatDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\sellercat\SellerCatsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\sellercat\SellerCatUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\RestWorkorderReplyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionActivitymodeAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionActivitymodeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionCheckRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionCommitRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionOrdermodeAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionOrdermodeListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionPropAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionPropListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionResumeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionSkuAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionSkuListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerPromotionSuspendRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\seller\SellerVenderInfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceAlltaskGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceCategoryGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceFinishedtaskGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceFreightmessageGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceHistoryGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceMajorcategoryGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceMessagesystemGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceOriginalorderidGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceReceivetaskGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceRefundinfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceServicedetailListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceServiceinfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceServicelogGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceUnpackinginfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceUnresolvedtaskGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceWaitauditGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceWaitfetchGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\AfsserviceWaitprocesstaskGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\service\LogisticsO2oOrderQueryAfsRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsCurrenttimeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsDeliveryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsOutboundRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsPrerefundRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsRefuseRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsSearchpreRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\DropshipDpsSearchsingleRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\PopVenderCenerVenderBrandQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\supplier\UserCategory3InfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\tools\TimeGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceFwlistpvGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceFwreferpvGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShoppvtop15bydayGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShoppvtop15bymonthGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShoppvtop15byweekGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopsalesbydayGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopsalesbymonthGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopsalesbyweekGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopuvtop15bydayGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopuvtop15bymonthGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\udp\DataserviceShopuvtop15byweekGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\user\DropshipDpsSearchSingleRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\vender\VenderGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\SkuCustomGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareAreaLimitSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareAreaLimitUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareBasebookGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareBaseproductGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareBasevideoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareBookbigfieldGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareDelistingGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareInfoByInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareListingGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareProductbigfieldGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareProductimageGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareProductsortGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WarePropimgAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WarePropimgDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WarePropimgsGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WarePropimgsSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WarePropimgUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuPriceUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuSearchListGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkusGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuStockUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareSkuUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateIdsAndNamesGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateToWaresUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareTemplateUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareUpdateDelistingRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareUpdateListingRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\ware\WareVideobigfieldGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\category\WareAttributesGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\category\WareCategoryGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\cps\CPSCatalogPageGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\cps\CPSSpreadHomeInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\cps\CPSWareDetailPageGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\recommend\AnotherBuyCombineRecommendRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\recommend\CombineRecommendRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\recommend\UserBrowseBuyRecommendRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\ware\RegionInfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\ware\SkuJdPriceGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\ware\WareGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\ware\WareSearchByCidRequst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\website\ware\WareSearchRequst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsCarriersListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOrderAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOrderDeleteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOrderGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOrderSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOtherInstoreAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOtherInstoreQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOtherOutstoreAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsOtherOutstoreQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsPoAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsPoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsReturnorderAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsReturnorderCancelRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsReturnorderQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsSkuAddRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsSkuQueryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsSkuUpdateRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsStockSearchRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\LogisticsWarehouseListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\WosSubbiztypelistGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\WosWorkinfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\wms\WosWorklistGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\workorder\RestWorkorderReplyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\workorder\WosSubbiztypelistGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\workorder\WosWorkinfoGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request\workorder\WosWorklistGetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\after\AfterSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\after\AfterStateUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\category\BrandsGetResponse.cs" />
+    <Compile Include="response\category\CategoryAttributeSearchResponse.cs" />
+    <Compile Include="response\category\CategoryAttributeValueSearchResponse.cs" />
+    <Compile Include="response\category\CategoryGroupSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\category\CategorySearchResponse.cs" />
+    <Compile Include="response\cps\ActivitySafVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\AdvDetailVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\AdZoneVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\BaseInfoVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\CategoryCommisionVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\EffectReportSafVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\GoodSafVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\GoodsVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\JosActivityImgVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\JosGoodsVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\MasterBillVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\OverviewVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PlanInfoVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PlanListVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PlanVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PromotionActivityVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PromotionGoodsVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PromotionPlanVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\PromotionShopVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\ResultVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\ShopSafVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionActivityCodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionActivityimg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionAdvdetailGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionCategoryCommision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionCategoryinfoSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionGoodsCodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionMasterAccountGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionMasterBillSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlanActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlanbaseinfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlanbaseinfoQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlandetailGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlanlistSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPlanSaveResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotionactivityQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotiongoodQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotiongoodUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotionreportQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotionshopQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionPromotionshopUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionReportOverviewSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionReportWindowSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionShopCodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionZoneCodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\UnionZoneInfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\cps\WindowAdvDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\DeliveryLogisticsGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\EtmsTraceGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\EtmsWaybillcodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\EtmsWaybillSendResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\GetResultInfoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\Reply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\SendResultInfoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\delivery\TraceApiDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\ClubCommentsummaryGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\ClubLastestcommentsGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\ClubLastestconsultionsGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\CommentReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\CommentVo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\Consultation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\ProductCommentSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\evaluation\Reply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneCategoryAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneCategoryQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneCategoryUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneImgInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureDeleteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureIsreferencedResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureReplaceResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzonePictureUploadResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneUserinfoQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\imgzone\ImgzoneZoneInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaCityGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaCountyGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaIpQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaListBeanVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaProvinceGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreasGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\AreaTownGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\EchoStrResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\IpLookupResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\JosAreaListBeanVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\innertest\Location.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\AccountVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\BillDetailVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\BillVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\CommodityInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\CommoditySpu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\IncomeExpenseVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\JosGoodsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\JosSkuInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KeywordGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KeywordQueryVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheAccountGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheAccountIncome_expenseSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheBillDetailsSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheBillSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheGoodsGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaichePopGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnBidRankGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnKeywordgroupListSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnMaterialLabelsSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanChannelCreateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanChannelModifyResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanDetailGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanListSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanSearchCreateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnPlanSearchModifyResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnScheduleBidDetailSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnScheduleFindScheduleCanUseResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnSpaceInfoSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\KuaicheZnSpacePageByTypeSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\MaterialLabelVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\MaterialLableJO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\PageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\PlanDetailInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\PlanMainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\PopDetailJos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\QueryPlanReturnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\RankReturnJO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\ResultStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\ScheduleVOJos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\SelectedKeywordInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\SpaceInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\kuaiche\SpacePageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\market\VasSubscribeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Activity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ActivityList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ActivityProductsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\BrowseBuyWidsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\BuyToBuyWidsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Catelogy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CatelogyAttributeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsActivityList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsActivityWare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsActivityWareList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsPromotions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsPromotionsByCatelogyIdList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CmsPromotionsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\CombineBuyingWidsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ExpandSorts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ImagePath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Items.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ItemVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ItemVO2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\MiaoShaFatherList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\MiaoShaList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Packs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\PacksList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Product.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ProductCatelogyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ProductDetailList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ProductInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ProductStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\Provice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\ProvinceList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\SearchCatelogyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\SearchProductList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareBrowsetobuyListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareBuytobuyListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareCatelogyAttributeListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareCombineListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePacksGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareProductCatelogyListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareProductDetailSearchListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareProductSearchListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareProductStockListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionActivitiesListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionActivitywareListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionCategorywareListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionIndexactivityGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionIndexactivityListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionsCatelogyidlistGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionSearchCatelogyListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionSeckillListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WarePromotionsListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\mobile\WareSelectedProvinceListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\ApiJosResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\LogisticsO2oOrderCarriageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\LogisticsO2oOrderSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderExportResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderFbpGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderFbpSearchResponse.cs" />
+    <Compile Include="response\order\OrderGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderinfoProductDiscountResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderinfoProductResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderinfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderinfoStatusFlowResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderLbpOutstorageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderLbpPrintDataGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderLbpWaybillUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderLogisticsSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderOrderDeleteApplyResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderPrintDataGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderPrintResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSearchResponse.cs" />
+    <Compile Include="response\order\OrderSoplOutstorageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSoplPrintDataGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSoplWaybillUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSopOutstorageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSopPrintDataGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderSopWaybillUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderVenderRemarkQueryByOrderIdResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OrderVenderRemarkUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OverseasOrderSopDeliveryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\OverseasOrderSopOutstorageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\TraceApiDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\VenderRemark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\order\VenderRemarkQueryResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\AdwordCoupon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\AdwordGiftSku.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\AdwordResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\PriceChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\PromotionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\WareInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\WarePriceGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\price\WarePromotionInfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\promotion\Promotion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\promotion\PromotionProduct.cs" />
+    <Compile Include="response\promotion\PromotionSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\promotion\PromotionSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\sellercat\SellerCatAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\sellercat\SellerCatDeleteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\sellercat\SellerCatsGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\sellercat\SellerCatUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\ActivityModeVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\OrderModeVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\PromoPropVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\PromoSkuVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\PromotionVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\RestWorkorderReplyResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionActivitymodeAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionActivitymodeGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionCheckResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionCommitResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionDeleteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionOrdermodeAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionOrdermodeListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionPropAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionPropListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionResumeResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionSkuAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionSkuListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerPromotionSuspendResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\SellerVenderInfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\VenderInfoResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\seller\WorkOrderResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsApplyWaitAudit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsApplyWaitFetch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsCategoryOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsCategoryOutMajor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsFinanceDetailOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsFinanceOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsFreightOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsMessageOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsPopApplyFetchWaitAudit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsPopApplyFetchWaitFetch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsRefundDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsRefundInfoOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsRefundOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceAlltaskGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceCategoryGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceFinishedtaskGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceFreightmessageGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceHistoryGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceMajorcategoryGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceMessagesystemGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceOriginalorderidGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceReceivetaskGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceRefundinfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceServicedetailListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceServiceinfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceServicelogGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceUnpackinginfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceUnresolvedtaskGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceWaitAudit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceWaitauditGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsServiceWaitFetch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceWaitfetchGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsserviceWaitprocesstaskGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\AfsSignatureOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\LogisticsO2oOrderQueryAfsResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageAfsLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageAllTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageFinishedTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageReceiveTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageUnresolvedTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageWaitAuditTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageWaitFetch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PageWaitProcessTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PartReceiveOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultListAfsServiceDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultListAfsServiceHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultListMessageSystemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectAfsCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectAfsFreight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectAfsLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectAfsService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectAllTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectFinishedTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectMajorCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectOrderId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectReceiveTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectRefundInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectUnpackingInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectUnresolvedTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectWaitAuditTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectWaitFetch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\service\PublicResultObjectWaitProcessTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DeliverDoResultSetDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsCurrenttimeResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsDeliveryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsOutboundResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsPrerefundResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsRefuseResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsSearchpreResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\DropshipDpsSearchsingleResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\OrderDetailForJosDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\OutBoundResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\PopVenderCenerVenderBrandQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\PreRefundResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\QueryOrderForJosResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\QueryOrderForJosResultListDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\QuerySingleOrderForJosResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\RefuseResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\ReturnOrderDetailForJosDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\ReturnOrderPreForJosResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\ReturnOrderPreForJosResultListDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\UserCategory3Dto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\UserCategory3InfoDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\UserCategory3InfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\supplier\VenderBrandPubInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\tools\TimeGetResponse.cs" />
+    <Compile Include="response\udp\DataserviceFwlistpvGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceFwreferpvGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShoppvtop15bydayGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShoppvtop15bymonthGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShoppvtop15byweekGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopsalesbydayGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopsalesbymonthGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopsalesbyweekGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopuvtop15bydayGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopuvtop15bymonthGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DataserviceShopuvtop15byweekGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DwsJosShopPvTop15Response.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DwsJosShopSalesResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\DwsJosShopUvTop15Response.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\FwPvResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\FwResultDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\ShopPvResultDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\ShopPvTop15Response.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\ShopSalesResultDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\udp\ShopUvResultDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\user\DropshipDpsSearchSingleResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\user\QueryOrderForJosResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\user\Result.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\vender\VenderGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\BookBigFieldEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\BookBigFieldInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\BookEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\BookInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\ImagePath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\ProductBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\ProductSkuList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\ProductSort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\SkuColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\SkuCustomGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\SkuSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\VideoBigFieldEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\VideoBigFieldInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\VideoEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\VideoInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareAddResponse.cs" />
+    <Compile Include="response\ware\WareAreaLimitSearchResponse.cs" />
+    <Compile Include="response\ware\WareAreaLimitUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareBasebookGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareBaseproductGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareBasevideoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareBookbigfieldGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareDeleteResponse.cs" />
+    <Compile Include="response\ware\WareDelistingGetResponse.cs" />
+    <Compile Include="response\ware\WareGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareInfoByInfoSearchResponse.cs" />
+    <Compile Include="response\ware\WareListingGetResponse.cs" />
+    <Compile Include="response\ware\WareListResponse.cs" />
+    <Compile Include="response\ware\WareProductbigfieldGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareProductimageGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareProductsortGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WarePropimgAddResponse.cs" />
+    <Compile Include="response\ware\WarePropimgDeleteResponse.cs" />
+    <Compile Include="response\ware\WarePropimgsGetResponse.cs" />
+    <Compile Include="response\ware\WarePropimgsSearchResponse.cs" />
+    <Compile Include="response\ware\WarePropimgUpdateResponse.cs" />
+    <Compile Include="response\ware\WareSkuAddResponse.cs" />
+    <Compile Include="response\ware\WareSkuDeleteResponse.cs" />
+    <Compile Include="response\ware\WareSkuGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareSkuPriceUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareSkuSearchListGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareSkusGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareSkuStockUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareSkuUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateDeleteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateIdsAndNamesGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateToWaresUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareTemplateUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareUpdateDelistingResponse.cs" />
+    <Compile Include="response\ware\WareUpdateListingResponse.cs" />
+    <Compile Include="response\ware\WareUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\ware\WareVideobigfieldGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\category\WareAttributesGetResponse.cs" />
+    <Compile Include="response\website\category\WareCategoryGetResponse.cs" />
+    <Compile Include="response\website\cps\CPSCatalogPageGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\cps\CPSSpreadHomeInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\cps\CPSWareDetailPageGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\recommend\AnotherBuyCombineRecommendResponse.cs" />
+    <Compile Include="response\website\recommend\CombineRecommendResponse.cs" />
+    <Compile Include="response\website\recommend\UserBrowseBuyRecommendResponse.cs" />
+    <Compile Include="response\website\ware\RegionInfoGetResponse.cs" />
+    <Compile Include="response\website\ware\SkuJdPriceGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\ware\WareGetResponse.cs" />
+    <Compile Include="response\website\ware\WareSearchByCidResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\website\ware\WareSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\CarriersDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\HashMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsCarriersListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOrderAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOrderDeleteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOrderGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOrderSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOtherInstoreAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOtherInstoreQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOtherOutstoreAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsOtherOutstoreQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsPoAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsPoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsReturnorderAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsReturnorderCancelResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsReturnorderQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsSkuAddResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsSkuQueryResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsSkuUpdateResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsStockSearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\LogisticsWarehouseListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\OrderPackageDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\OrderStatusDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\OtherInstoreOrderDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ProcessResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ReceivingTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ResponseOrderOtherDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ResponseOrderStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ResponseReturnOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\ResponseStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\SafBiztypeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\SafWoOperDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\SafWorkDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\SafWorkInfoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\SafWorkPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\StockDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\WarehouseDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\WosSubbiztypelistGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\WosWorkinfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\wms\WosWorklistGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\RestWorkorderReplyResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\SafBiztypeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\SafWoOperDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\SafWorkDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\SafWorkInfoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\SafWorkPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\WorkOrderResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\WosSubbiztypelistGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\WosWorkinfoGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="response\workorder\WosWorklistGetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UniversalRequest.cs" />
+    <Compile Include="UniversalResponse.cs" />
+    <Compile Include="Util\FileItem.cs" />
+    <Compile Include="Util\RequestValidator.cs" />
+    <Compile Include="Util\JdUtils.cs" />
+    <Compile Include="Util\WebUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JdSdk2.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
