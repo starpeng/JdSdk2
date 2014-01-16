@@ -16,7 +16,7 @@ namespace JdSdk.Response.Workorder
             set;
         }
 
-        [JsonProperty("totalCount")]
+        [JsonProperty("total_count")]
         public Nullable<Int32> TotalCount
         {
             get;

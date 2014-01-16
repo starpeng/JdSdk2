@@ -24,31 +24,12 @@ namespace JdSdk.Response.Ware
         }
 
         [JsonProperty("skus")]
-        public List<SkuInfo> _SkuInfo
+        public List<JdSdk.Domain.Ware.Sku> SkuInfo
         {
             get;
             set;
         }
 
-﻿        [Serializable]
-        public class SkuInfo : JdObject
-        {
-            [JsonProperty("sku_id")]
-            public Nullable<Int64> SkuId
-            {
-                get;
-                set;
-            }
-
-            [JsonProperty("attribute")]
-            public String Attribute
-            {
-                get;
-                set;
-            }
-
-        }
-
     }
 
-}
+ }

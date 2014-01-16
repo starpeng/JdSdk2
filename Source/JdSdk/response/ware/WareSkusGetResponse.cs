@@ -11,7 +11,7 @@ namespace JdSdk.Response.Ware
     public class WareSkusGetResponse : JdResponse
     {
         [JsonProperty("skus")]
-        public List<Sku> Skus
+        public List<Domain.Ware.Sku> Skus
         {
             get;
             set;
@@ -19,4 +19,4 @@ namespace JdSdk.Response.Ware
 
     }
 
-}
+ }

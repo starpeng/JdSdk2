@@ -9,7 +9,7 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class RestWorkorderReplyResponse : JdResponse
     {
-        [JsonProperty("workOrder")]
+        [JsonProperty("work_order")]
         public WorkOrderResponse WorkOrder
         {
             get;

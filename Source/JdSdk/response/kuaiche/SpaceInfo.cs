@@ -30,7 +30,7 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("pageId")]
+        [JsonProperty("page_id")]
         public Nullable<Int64> PageId
         {
             get;

@@ -30,13 +30,6 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("cname")]
-        public String Cname
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("wgroup_id")]
         public String WgroupId
         {
@@ -44,29 +37,8 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("category_id")]
-        public String CategoryId
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("price")]
         public Nullable<Decimal> Price
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("type")]
-        public Nullable<Int32> Type
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("base_price")]
-        public Nullable<Decimal> BasePrice
         {
             get;
             set;

@@ -118,7 +118,7 @@ namespace JdSdk.Request.Ware
             set;
         }
 
-        public Byte[] WareImage
+        public byte[] WareImage
         {
             get;
             set;

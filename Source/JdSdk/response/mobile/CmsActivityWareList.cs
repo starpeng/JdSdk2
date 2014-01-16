@@ -51,8 +51,8 @@ namespace JdSdk.Response.Mobile
             set;
         }
 
-        [JsonProperty("cmsActivityWareList")]
-        public List<CmsActivityWare> _CmsActivityWareList
+        [JsonProperty("cmsActivityWareLists")]
+        public List<CmsActivityWare> CmsActivityWareLists
         {
             get;
             set;

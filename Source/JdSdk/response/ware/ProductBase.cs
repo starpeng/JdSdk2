@@ -93,13 +93,6 @@ namespace JdSdk.Response.Ware
             set;
         }
 
-        [JsonProperty("max_purch_qty")]
-        public Nullable<Int32> MaxPurchQty
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("cid2")]
         public Nullable<Int32> Cid2
         {
@@ -137,20 +130,6 @@ namespace JdSdk.Response.Ware
 
         [JsonProperty("brand_id")]
         public Nullable<Int32> BrandId
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("bar_code")]
-        public String BarCode
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("erp_pid")]
-        public Nullable<Int32> ErpPid
         {
             get;
             set;
@@ -200,76 +179,6 @@ namespace JdSdk.Response.Ware
 
         [JsonProperty("model")]
         public String Model
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("upc")]
-        public String Upc
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("pname")]
-        public String Pname
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("phone")]
-        public String Phone
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("site")]
-        public String Site
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("issn")]
-        public Nullable<Int32> Issn
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("vender_id")]
-        public String VenderId
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("vender_name")]
-        public String VenderName
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("shop_id")]
-        public String ShopId
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("shop_name")]
-        public String ShopName
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("pop_pid")]
-        public String PopPid
         {
             get;
             set;

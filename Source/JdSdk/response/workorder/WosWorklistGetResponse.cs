@@ -9,8 +9,8 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class WosWorklistGetResponse : JdResponse
     {
-        [JsonProperty("result")]
-        public SafWorkPage Result
+        [JsonProperty("page")]
+        public SafWorkPage Page
         {
             get;
             set;

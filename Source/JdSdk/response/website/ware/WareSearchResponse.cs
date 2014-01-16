@@ -19,4 +19,4 @@ namespace JdSdk.Response.Website.Ware
 
     }
 
-}
+ }

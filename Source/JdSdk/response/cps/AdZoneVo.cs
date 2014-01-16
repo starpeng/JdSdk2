@@ -73,7 +73,7 @@ namespace JdSdk.Response.Cps
         }
 
         [JsonProperty("category")]
-        public List<Object> Category
+        public List<String> Category
         {
             get;
             set;

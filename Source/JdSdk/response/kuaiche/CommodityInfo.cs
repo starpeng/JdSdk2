@@ -44,13 +44,6 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("domain")]
-        public String Domain
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("price")]
         public Nullable<Decimal> Price
         {
@@ -58,29 +51,8 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("menu_name")]
-        public String MenuName
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("goods_path")]
-        public List<String> GoodsPath
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("page_category_id")]
-        public Nullable<Int64> PageCategoryId
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("page_category_id_all")]
-        public String PageCategoryIdAll
+        [JsonProperty("material_label")]
+        public MaterialLabelVO MaterialLabel
         {
             get;
             set;

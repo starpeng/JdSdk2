@@ -10,7 +10,7 @@ namespace JdSdk.Response.Kuaiche
     public class KuaicheZnScheduleBidDetailSearchResponse : JdResponse
     {
         [JsonProperty("Schedule_list")]
-        public List<ScheduleVOJos> ScheduleList
+        public List<Int32> ScheduleList
         {
             get;
             set;

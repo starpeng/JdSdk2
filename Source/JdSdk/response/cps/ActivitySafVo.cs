@@ -10,7 +10,7 @@ namespace JdSdk.Response.Cps
     public class ActivitySafVo : JdObject
     {
         [JsonProperty("activity_pk")]
-        public String ActivityPk
+        public Nullable<Int64> ActivityPk
         {
             get;
             set;
@@ -25,20 +25,6 @@ namespace JdSdk.Response.Cps
 
         [JsonProperty("activity_url")]
         public String ActivityUrl
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("activity_width")]
-        public Nullable<Int32> ActivityWidth
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("activity_height")]
-        public Nullable<Int32> ActivityHeight
         {
             get;
             set;
@@ -74,6 +60,13 @@ namespace JdSdk.Response.Cps
 
         [JsonProperty("activity_commRatio")]
         public Nullable<Decimal> ActivityCommRatio
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("img_list")]
+        public List<ActivityImgSafVo> ImgList
         {
             get;
             set;

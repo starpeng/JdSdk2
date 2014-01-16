@@ -16,7 +16,7 @@ namespace JdSdk.Response.Ware
             set;
         }
 
-        [JsonProperty("skuId")]
+        [JsonProperty("sku_id")]
         public Nullable<Int32> SkuId
         {
             get;
@@ -37,7 +37,7 @@ namespace JdSdk.Response.Ware
             set;
         }
 
-        [JsonProperty("isPrimary")]
+        [JsonProperty("is_primary")]
         public Nullable<Int32> IsPrimary
         {
             get;

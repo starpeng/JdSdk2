@@ -30,7 +30,7 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("planDate")]
+        [JsonProperty("plan_date")]
         public String PlanDate
         {
             get;

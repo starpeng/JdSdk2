@@ -10,7 +10,7 @@ namespace JdSdk.Request.Imgzone
 {
 ﻿    public class ImgzonePictureUploadRequest : JdRequestBase<ImgzonePictureUploadResponse>
     {
-        public Byte[] ImageData
+        public byte[] ImageData
         {
             get;
             set;

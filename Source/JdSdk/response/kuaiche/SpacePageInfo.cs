@@ -23,14 +23,14 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("categoryName")]
+        [JsonProperty("category_name")]
         public String CategoryName
         {
             get;
             set;
         }
 
-        [JsonProperty("parentId")]
+        [JsonProperty("parent_id")]
         public Nullable<Int64> ParentId
         {
             get;

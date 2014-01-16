@@ -11,7 +11,7 @@ namespace JdSdk.Response.Ware
     public class WareListingGetResponse : JdResponse
     {
         [JsonProperty("ware_infos")]
-        public List<JdSdk.Domain.Ware.Ware> WareInfos
+        public List<Domain.Ware.Ware> WareInfos
         {
             get;
             set;
@@ -26,4 +26,4 @@ namespace JdSdk.Response.Ware
 
     }
 
-}
+ }

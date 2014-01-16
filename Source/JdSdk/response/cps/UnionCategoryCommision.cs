@@ -65,20 +65,6 @@ namespace JdSdk.Response.Cps
             set;
         }
 
-        [JsonProperty("priceStart")]
-        public Nullable<Decimal> PriceStart
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("priceEnd")]
-        public Nullable<Decimal> PriceEnd
-        {
-            get;
-            set;
-        }
-
     }
 
 }

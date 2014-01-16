@@ -9,7 +9,7 @@ namespace JdSdk.Response.Kuaiche
 ﻿    [Serializable]
     public class KuaicheZnSpacePageByTypeSearchResponse : JdResponse
     {
-        [JsonProperty("spacePageInfoList")]
+        [JsonProperty("space_page_info_list")]
         public List<SpacePageInfo> SpacePageInfoList
         {
             get;

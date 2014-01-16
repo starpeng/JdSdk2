@@ -18,7 +18,7 @@ namespace JdSdk.Response.Category
         }
 
         [JsonProperty("item_cats")]
-        public List<JdSdk.Domain.Category.Category> Category
+        public List<Domain.Category.Category> Category
         {
             get;
             set;
@@ -26,4 +26,4 @@ namespace JdSdk.Response.Category
 
     }
 
-}
+ }

@@ -9,6 +9,13 @@ namespace JdSdk.Response.Supplier
 ﻿    [Serializable]
     public class OrderDetailForJosDto : JdObject
     {
+        [JsonProperty("skuId")]
+        public String SkuId
+        {
+            get;
+            set;
+        }
+
         [JsonProperty("commodityName")]
         public String CommodityName
         {
@@ -18,13 +25,6 @@ namespace JdSdk.Response.Supplier
 
         [JsonProperty("commodityNum")]
         public Nullable<Int32> CommodityNum
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("skuId")]
-        public String SkuId
         {
             get;
             set;

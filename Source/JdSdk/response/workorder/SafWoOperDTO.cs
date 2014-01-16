@@ -9,28 +9,28 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class SafWoOperDTO : JdObject
     {
-        [JsonProperty("operUser")]
+        [JsonProperty("oper_user")]
         public String OperUser
         {
             get;
             set;
         }
 
-        [JsonProperty("operDate")]
+        [JsonProperty("oper_date")]
         public Nullable<DateTime> OperDate
         {
             get;
             set;
         }
 
-        [JsonProperty("operType")]
+        [JsonProperty("oper_type")]
         public String OperType
         {
             get;
             set;
         }
 
-        [JsonProperty("operContent")]
+        [JsonProperty("oper_content")]
         public String OperContent
         {
             get;

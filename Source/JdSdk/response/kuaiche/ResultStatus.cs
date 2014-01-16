@@ -23,7 +23,7 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("planId")]
+        [JsonProperty("plan_id")]
         public Nullable<Int64> PlanId
         {
             get;

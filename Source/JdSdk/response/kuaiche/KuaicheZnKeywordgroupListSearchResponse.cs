@@ -9,8 +9,8 @@ namespace JdSdk.Response.Kuaiche
 ﻿    [Serializable]
     public class KuaicheZnKeywordgroupListSearchResponse : JdResponse
     {
-        [JsonProperty("keyword_group_list")]
-        public List<KeywordGroup> KeywordGroupList
+        [JsonProperty("return_info")]
+        public KeywordQueryVO ReturnInfo
         {
             get;
             set;

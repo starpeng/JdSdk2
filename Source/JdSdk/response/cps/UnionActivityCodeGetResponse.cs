@@ -16,8 +16,8 @@ namespace JdSdk.Response.Cps
             set;
         }
 
-        [JsonProperty("img_code")]
-        public String ImgCode
+        [JsonProperty("img_codes")]
+        public List<ActivityImageCode> ImgCodes
         {
             get;
             set;

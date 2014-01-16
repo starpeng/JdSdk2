@@ -9,28 +9,28 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class SafWorkDTO : JdObject
     {
-        [JsonProperty("workId")]
+        [JsonProperty("work_id")]
         public Nullable<Int64> WorkId
         {
             get;
             set;
         }
 
-        [JsonProperty("orderId")]
+        [JsonProperty("order_id")]
         public Nullable<Int64> OrderId
         {
             get;
             set;
         }
 
-        [JsonProperty("statusName")]
+        [JsonProperty("status_name")]
         public String StatusName
         {
             get;
             set;
         }
 
-        [JsonProperty("createDate")]
+        [JsonProperty("create_date")]
         public Nullable<DateTime> CreateDate
         {
             get;

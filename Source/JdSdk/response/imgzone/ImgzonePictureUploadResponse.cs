@@ -23,6 +23,13 @@ namespace JdSdk.Response.Imgzone
             set;
         }
 
+        [JsonProperty("picture_id")]
+        public String PictureId
+        {
+            get;
+            set;
+        }
+
         [JsonProperty("picture_url")]
         public String PictureUrl
         {

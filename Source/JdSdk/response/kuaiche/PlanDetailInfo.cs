@@ -65,13 +65,6 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("status_name")]
-        public String StatusName
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("allow_split")]
         public Nullable<Int32> AllowSplit
         {
@@ -151,20 +144,6 @@ namespace JdSdk.Response.Kuaiche
 
         [JsonProperty("space_vo")]
         public SpaceInfo SpaceVo
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("bid_status")]
-        public Nullable<Int32> BidStatus
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("ad_space_name")]
-        public String AdSpaceName
         {
             get;
             set;

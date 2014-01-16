@@ -9,7 +9,7 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class WosSubbiztypelistGetResponse : JdResponse
     {
-        [JsonProperty("safBiztypeDtos")]
+        [JsonProperty("saf_biztype_Dtos")]
         public List<SafBiztypeDTO> SafBiztypeDtos
         {
             get;

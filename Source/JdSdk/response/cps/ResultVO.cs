@@ -31,7 +31,7 @@ namespace JdSdk.Response.Cps
         }
 
         [JsonProperty("result")]
-        public List<CategoryCommisionVO> Result
+        public PlanInfoVO Result
         {
             get;
             set;

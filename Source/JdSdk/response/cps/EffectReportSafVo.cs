@@ -45,7 +45,7 @@ namespace JdSdk.Response.Cps
         }
 
         [JsonProperty("report_orderStatus")]
-        public Nullable<Int64> ReportOrderStatus
+        public Nullable<Int32> ReportOrderStatus
         {
             get;
             set;
@@ -73,7 +73,7 @@ namespace JdSdk.Response.Cps
         }
 
         [JsonProperty("report_itemNum")]
-        public Nullable<Int64> ReportItemNum
+        public Nullable<Int32> ReportItemNum
         {
             get;
             set;

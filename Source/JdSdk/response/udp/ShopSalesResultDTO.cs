@@ -9,13 +9,6 @@ namespace JdSdk.Response.Udp
 ﻿    [Serializable]
     public class ShopSalesResultDTO : JdObject
     {
-        [JsonProperty("code")]
-        public Nullable<Int32> Code
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("message")]
         public String Message
         {
@@ -24,7 +17,7 @@ namespace JdSdk.Response.Udp
         }
 
         [JsonProperty("obj")]
-        public DwsJosShopSalesResponse Obj
+        public ShopSalesResponse Obj
         {
             get;
             set;

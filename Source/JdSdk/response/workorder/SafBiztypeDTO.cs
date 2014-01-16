@@ -9,14 +9,14 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class SafBiztypeDTO : JdObject
     {
-        [JsonProperty("subBiztypeId")]
+        [JsonProperty("sub_biztype_id")]
         public Nullable<Int64> SubBiztypeId
         {
             get;
             set;
         }
 
-        [JsonProperty("subBiztypeName")]
+        [JsonProperty("sub_biztype_name")]
         public String SubBiztypeName
         {
             get;

@@ -16,7 +16,7 @@ namespace JdSdk.Request.Imgzone
             set;
         }
 
-        public Byte[] ImageData
+        public byte[] ImageData
         {
             get;
             set;

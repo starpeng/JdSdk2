@@ -9,28 +9,28 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class SafWorkInfoDTO : JdObject
     {
-        [JsonProperty("sendBiztypeId")]
+        [JsonProperty("send_biztype_id")]
         public Nullable<Int64> SendBiztypeId
         {
             get;
             set;
         }
 
-        [JsonProperty("sendBiztypeName")]
+        [JsonProperty("send_biztype_name")]
         public String SendBiztypeName
         {
             get;
             set;
         }
 
-        [JsonProperty("replyBiztypeName")]
+        [JsonProperty("reply_biztype_name")]
         public String ReplyBiztypeName
         {
             get;
             set;
         }
 
-        [JsonProperty("replySubBiztypeName")]
+        [JsonProperty("reply_sub_biztype_name")]
         public String ReplySubBiztypeName
         {
             get;
@@ -44,14 +44,14 @@ namespace JdSdk.Response.Workorder
             set;
         }
 
-        [JsonProperty("createDate")]
+        [JsonProperty("create_date")]
         public Nullable<DateTime> CreateDate
         {
             get;
             set;
         }
 
-        [JsonProperty("operLogs")]
+        [JsonProperty("oper_logs")]
         public List<SafWoOperDTO> OperLogs
         {
             get;

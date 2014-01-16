@@ -23,8 +23,8 @@ namespace JdSdk.Response.Cps
             set;
         }
 
-        [JsonProperty("shop_promotionUrl")]
-        public String ShopPromotionUrl
+        [JsonProperty("shop_promUrl")]
+        public String ShopPromUrl
         {
             get;
             set;

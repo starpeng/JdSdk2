@@ -9,8 +9,8 @@ namespace JdSdk.Response.Price
 ﻿    [Serializable]
     public class PriceChange : JdObject
     {
-        [JsonProperty("market_price")]
-        public String MarketPrice
+        [JsonProperty("sku_id")]
+        public String SkuId
         {
             get;
             set;
@@ -23,8 +23,8 @@ namespace JdSdk.Response.Price
             set;
         }
 
-        [JsonProperty("sku_id")]
-        public String SkuId
+        [JsonProperty("market_price")]
+        public String MarketPrice
         {
             get;
             set;

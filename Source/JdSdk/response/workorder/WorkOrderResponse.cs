@@ -9,14 +9,14 @@ namespace JdSdk.Response.Workorder
 ﻿    [Serializable]
     public class WorkOrderResponse : JdObject
     {
-        [JsonProperty("resultCode")]
+        [JsonProperty("result_code")]
         public Nullable<Int32> ResultCode
         {
             get;
             set;
         }
 
-        [JsonProperty("resultMsg")]
+        [JsonProperty("result_msg")]
         public String ResultMsg
         {
             get;

@@ -30,13 +30,6 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("domain")]
-        public String Domain
-        {
-            get;
-            set;
-        }
-
     }
 
 }

@@ -9,14 +9,14 @@ namespace JdSdk.Response.Ware
 ﻿    [Serializable]
     public class ImagePath : JdObject
     {
-        [JsonProperty("skuId")]
+        [JsonProperty("sku_id")]
         public Nullable<Int32> SkuId
         {
             get;
             set;
         }
 
-        [JsonProperty("imageList")]
+        [JsonProperty("image_list")]
         public List<Image> ImageList
         {
             get;

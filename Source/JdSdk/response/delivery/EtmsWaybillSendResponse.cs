@@ -3,6 +3,7 @@ using System.Xml.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using JdSdk.Domain.Delivery.OrderInfoJosService;
 
 namespace JdSdk.Response.Delivery
 {

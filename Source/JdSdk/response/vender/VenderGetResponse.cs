@@ -11,7 +11,7 @@ namespace JdSdk.Response.Vender
     public class VenderGetResponse : JdResponse
     {
         [JsonProperty("vender")]
-        public JdSdk.Domain.Vender.Vender Vender
+        public Domain.Vender.Vender Vender
         {
             get;
             set;
@@ -19,4 +19,4 @@ namespace JdSdk.Response.Vender
 
     }
 
-}
+ }

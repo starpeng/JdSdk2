@@ -9,7 +9,7 @@ namespace JdSdk.Response.Kuaiche
 ﻿    [Serializable]
     public class KeywordGroup : JdObject
     {
-        [JsonProperty("wgroupId")]
+        [JsonProperty("wgroup_id")]
         public Nullable<Int64> WgroupId
         {
             get;
@@ -23,43 +23,29 @@ namespace JdSdk.Response.Kuaiche
             set;
         }
 
-        [JsonProperty("categoryId")]
-        public String CategoryId
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("searchNum")]
+        [JsonProperty("search_num")]
         public Nullable<Int64> SearchNum
         {
             get;
             set;
         }
 
-        [JsonProperty("basePrice")]
-        public Nullable<Decimal> BasePrice
+        [JsonProperty("base_price")]
+        public Nullable<Double> BasePrice
         {
             get;
             set;
         }
 
-        [JsonProperty("avgPrice")]
-        public Nullable<Decimal> AvgPrice
+        [JsonProperty("avg_price")]
+        public Nullable<Double> AvgPrice
         {
             get;
             set;
         }
 
-        [JsonProperty("avgDealPrice")]
-        public Nullable<Decimal> AvgDealPrice
-        {
-            get;
-            set;
-        }
-
-        [JsonProperty("type")]
-        public Nullable<Int32> Type
+        [JsonProperty("week_ctr")]
+        public Nullable<Double> WeekCtr
         {
             get;
             set;
