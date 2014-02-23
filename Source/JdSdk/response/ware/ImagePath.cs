@@ -9,15 +9,22 @@ namespace JdSdk.Response.Ware
 ﻿    [Serializable]
     public class ImagePath : JdObject
     {
-        [JsonProperty("sku_id")]
-        public Nullable<Int32> SkuId
+        [JsonProperty("newpath")]
+        public String Newpath
         {
             get;
             set;
         }
 
-        [JsonProperty("image_list")]
-        public List<Image> ImageList
+        [JsonProperty("bigpath")]
+        public String Bigpath
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("skuId")]
+        public Nullable<Int32> SkuId
         {
             get;
             set;

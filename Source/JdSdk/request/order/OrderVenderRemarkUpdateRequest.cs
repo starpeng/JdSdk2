@@ -28,6 +28,12 @@ namespace JdSdk.Request.Order
             set;
         }
 
+        public String Flag
+        {
+            get;
+            set;
+        }
+
         public override String ApiName
         {
             get{ return "360buy.order.vender.remark.update"; }
@@ -38,6 +44,7 @@ namespace JdSdk.Request.Order
             paramters.Add("order_id" ,this.OrderId);
             paramters.Add("remark" ,this.Remark);
             paramters.Add("trade_no" ,this.TradeNo);
+            paramters.Add("flag" ,this.Flag);
         }
 
     }

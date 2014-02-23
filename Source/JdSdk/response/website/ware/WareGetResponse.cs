@@ -11,12 +11,10 @@ namespace JdSdk.Response.Website.Ware
     public class WareGetResponse : JdResponse
     {
         [JsonProperty("waremodel")]
-        public JdSdk.Domain.Website.Ware.Ware WareModel
+        public Domain.Website.Ware.Ware WareModel
         {
             get;
             set;
         }
-
     }
-
  }

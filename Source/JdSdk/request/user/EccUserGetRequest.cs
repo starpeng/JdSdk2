@@ -10,7 +10,7 @@ namespace JdSdk.Request.User
 {
 ﻿    public class EccUserGetRequest : JdRequestBase<EccUserGetResponse>
     {
-        public String UserName
+        public Nullable<Int64> UserId
         {
             get;
             set;
@@ -29,7 +29,7 @@ namespace JdSdk.Request.User
 
         protected override void PrepareParam(IDictionary<String, Object> paramters)
         {
-            paramters.Add("user_name" ,this.UserName);
+            paramters.Add("user_id" ,this.UserId);
             paramters.Add("ip" ,this.Ip);
         }
 

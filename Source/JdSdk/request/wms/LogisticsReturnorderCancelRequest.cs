@@ -16,12 +16,6 @@ namespace JdSdk.Request.Wms
             set;
         }
 
-        public String IsvSource
-        {
-            get;
-            set;
-        }
-
         public override String ApiName
         {
             get{ return "jingdong.logistics.returnorder.cancel"; }
@@ -30,7 +24,6 @@ namespace JdSdk.Request.Wms
         protected override void PrepareParam(IDictionary<String, Object> paramters)
         {
             paramters.Add("receipt_no" ,this.ReceiptNo);
-            paramters.Add("isv_source" ,this.IsvSource);
         }
 
     }

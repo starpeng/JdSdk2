@@ -11,10 +11,12 @@ namespace JdSdk.Response.Ware
     public class WareSkuGetResponse : JdResponse
     {
         [JsonProperty("sku")]
-        public Domain.Ware.Sku Sku
+         public Domain.Ware.Sku Sku
         {
             get;
             set;
         }
+
     }
- }
+
+}

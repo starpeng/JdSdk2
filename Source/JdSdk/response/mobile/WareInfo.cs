@@ -37,8 +37,8 @@ namespace JdSdk.Response.Mobile
             set;
         }
 
-        [JsonProperty("imageUrl")]
-        public String ImageUrl
+        [JsonProperty("imageurl")]
+        public String Imageurl
         {
             get;
             set;

@@ -88,6 +88,24 @@ namespace JdSdk.Request.Ware
             set;
         }
 
+        public String ParentShopCategoryId
+        {
+            get;
+            set;
+        }
+
+        public String ShopCategoryId
+        {
+            get;
+            set;
+        }
+
+        public String ItemNum
+        {
+            get;
+            set;
+        }
+
         public override String ApiName
         {
             get{ return "360buy.wares.search"; }
@@ -108,6 +126,9 @@ namespace JdSdk.Request.Ware
             paramters.Add("end_modified" ,this.EndModified);
             paramters.Add("ware_status" ,this.WareStatus);
             paramters.Add("fields" ,this.Fields);
+            paramters.Add("parentShopCategoryId" ,this.ParentShopCategoryId);
+            paramters.Add("shopCategoryId" ,this.ShopCategoryId);
+            paramters.Add("itemNum" ,this.ItemNum);
         }
 
     }

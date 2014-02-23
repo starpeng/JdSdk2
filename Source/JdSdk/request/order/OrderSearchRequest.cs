@@ -46,6 +46,18 @@ namespace JdSdk.Request.Order
             set;
         }
 
+        public String SortType
+        {
+            get;
+            set;
+        }
+
+        public String DateType
+        {
+            get;
+            set;
+        }
+
         public override String ApiName
         {
             get{ return "360buy.order.search"; }
@@ -59,6 +71,8 @@ namespace JdSdk.Request.Order
             paramters.Add("page" ,this.Page);
             paramters.Add("page_size" ,this.PageSize);
             paramters.Add("optional_fields" ,this.OptionalFields);
+            paramters.Add("sortType" ,this.SortType);
+            paramters.Add("dateType" ,this.DateType);
         }
 
     }

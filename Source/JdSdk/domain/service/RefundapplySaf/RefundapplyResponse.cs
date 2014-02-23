@@ -9,13 +9,6 @@ namespace JdSdk.Domain.Service.RefundapplySaf
 ﻿    [Serializable]
     public class RefundapplyResponse : JdObject
     {
-        [JsonProperty("count")]
-        public Nullable<Int64> Count
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("results")]
         public List<QueryMap> Results
         {

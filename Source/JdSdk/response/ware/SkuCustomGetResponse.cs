@@ -16,7 +16,5 @@ namespace JdSdk.Response.Ware
             get;
             set;
         }
-
     }
-
  }

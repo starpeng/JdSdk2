@@ -26,4 +26,4 @@ namespace JdSdk.Response.Category
 
     }
 
- }
+}

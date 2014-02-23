@@ -317,6 +317,13 @@ namespace JdSdk.Domain.Ware
             set;
         }
 
+        [JsonProperty("ad_content")]
+        public String AdContent
+        {
+            get;
+            set;
+        }
+
     }
 
 }

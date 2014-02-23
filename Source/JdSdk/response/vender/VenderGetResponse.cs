@@ -16,7 +16,5 @@ namespace JdSdk.Response.Vender
             get;
             set;
         }
-
     }
-
  }

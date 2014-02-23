@@ -16,8 +16,8 @@ namespace JdSdk.Response.Mobile
             set;
         }
 
-        [JsonProperty("wareinfo")]
-        public List<WareInfo> WareInfo
+        [JsonProperty("wareInfoLists")]
+        public List<WareInfo> WareInfoLists
         {
             get;
             set;

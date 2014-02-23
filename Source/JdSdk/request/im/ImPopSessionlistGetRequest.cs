@@ -28,6 +28,18 @@ namespace JdSdk.Request.Im
             set;
         }
 
+        public Nullable<Int32> Page
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> PageSize
+        {
+            get;
+            set;
+        }
+
         public override String ApiName
         {
             get{ return "jingdong.im.pop.sessionlist.get"; }
@@ -38,6 +50,8 @@ namespace JdSdk.Request.Im
             paramters.Add("waiter" ,this.Waiter);
             paramters.Add("startTime" ,this.StartTime);
             paramters.Add("endTime" ,this.EndTime);
+            paramters.Add("page" ,this.Page);
+            paramters.Add("pageSize" ,this.PageSize);
         }
 
     }

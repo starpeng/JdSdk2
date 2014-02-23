@@ -10,7 +10,7 @@ namespace JdSdk.Domain.Website.Cps
     public class PromoteWareDetail : JdObject
     {
         [JsonProperty("ware")]
-        public Ware.Ware Ware
+         public Ware.Ware Ware
         {
             get;
             set;
@@ -32,4 +32,4 @@ namespace JdSdk.Domain.Website.Cps
 
     }
 
- }
+}

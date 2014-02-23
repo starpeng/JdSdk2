@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using JdSdk.Domain.Website.Response;
 using JdSdk.Request;
+using JdSdk.Domain.Website.Response;
 
 namespace JdSdk.Domain.Website.Request
 {
