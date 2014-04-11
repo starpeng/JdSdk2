@@ -6,8 +6,12 @@
 版本号规则变更为与编译发布日期一致。
 
 
-交流QQ群：236361019 SDK交流
+SDK交流QQ群：236361019 SDK交流
+
+.NET技术交流QQ群：43315956
+
+
 
 源码托管地址：
 GitHub：https://github.com/starpeng/JdSdk2/
-京东：https://code.jd.com/starpeng/JdSdk2.NET
+京东：https://code.jd.com
