@@ -1,0 +1,22 @@
+﻿﻿using System;
+using System.Xml.Serialization;
+using System.Collections;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using JdSdk.Domain.Zhijian.QTArticleService;
+
+namespace JdSdk.Response.Zhijian
+{
+﻿    [Serializable]
+    public class MarketServiceQtSubscribeGetResponse : JdResponse
+    {
+        [JsonProperty("qtArticleResult")]
+        public QtArticleResult QtArticleResult
+        {
+            get;
+            set;
+        }
+
+    }
+
+}

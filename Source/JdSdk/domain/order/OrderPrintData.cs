@@ -121,6 +121,55 @@ namespace JdSdk.Domain.Order
             set;
         }
 
+        [JsonProperty("invoice_Type")]
+        public String InvoiceType
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("invoice_Content")]
+        public String InvoiceContent
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("invoice_Title")]
+        public String InvoiceTitle
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("pickUpSign")]
+        public String PickUpSign
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("pickUpSign_Type")]
+        public Nullable<Int32> PickUpSignType
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("orderLevelSign")]
+        public String OrderLevelSign
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("orderLevel_Type")]
+        public Nullable<Int32> OrderLevelType
+        {
+            get;
+            set;
+        }
+
     }
 
 }

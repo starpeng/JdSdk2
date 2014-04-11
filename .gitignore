@@ -22,4 +22,4 @@ TestResults
 /Source/Build
 /Source/packages
 
-/Source/JdSdk2.sln.GhostDoc.xml
+*.GhostDoc.xml

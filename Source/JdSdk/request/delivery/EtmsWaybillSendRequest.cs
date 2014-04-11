@@ -124,6 +124,48 @@ namespace JdSdk.Request.Delivery
             set;
         }
 
+        public Nullable<Int32> ProvinceId
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> CityId
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> CountyId
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> TownId
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> SiteType
+        {
+            get;
+            set;
+        }
+
+        public Nullable<Int32> SiteId
+        {
+            get;
+            set;
+        }
+
+        public String SiteName
+        {
+            get;
+            set;
+        }
+
         public String ReceiveTel
         {
             get;
@@ -282,6 +324,13 @@ namespace JdSdk.Request.Delivery
             paramters.Add("city" ,this.City);
             paramters.Add("county" ,this.County);
             paramters.Add("town" ,this.Town);
+            paramters.Add("provinceId" ,this.ProvinceId);
+            paramters.Add("cityId" ,this.CityId);
+            paramters.Add("countyId" ,this.CountyId);
+            paramters.Add("townId" ,this.TownId);
+            paramters.Add("siteType" ,this.SiteType);
+            paramters.Add("siteId" ,this.SiteId);
+            paramters.Add("siteName" ,this.SiteName);
             paramters.Add("receiveTel" ,this.ReceiveTel);
             paramters.Add("receiveMobile" ,this.ReceiveMobile);
             paramters.Add("postcode" ,this.Postcode);

@@ -118,6 +118,12 @@ namespace JdSdk.Request.Ware
             set;
         }
 
+        public String WareLocation
+        {
+            get;
+            set;
+        }
+
         public String Producter
         {
             get;
@@ -293,6 +299,7 @@ namespace JdSdk.Request.Ware
             paramters.Add("option_type" ,this.OptionType);
             paramters.Add("item_num" ,this.ItemNum);
             paramters.Add("stock_num" ,this.StockNum);
+            paramters.Add("ware_location" ,this.WareLocation);
             paramters.Add("producter" ,this.Producter);
             paramters.Add("wrap" ,this.Wrap);
             paramters.Add("length" ,this.Length);

@@ -16,6 +16,12 @@ namespace JdSdk.Request.Ware
             set;
         }
 
+        public String WareLocation
+        {
+            get;
+            set;
+        }
+
         public String Cid
         {
             get;
@@ -276,6 +282,7 @@ namespace JdSdk.Request.Ware
         protected override void PrepareParam(IDictionary<String, Object> paramters)
         {
             paramters.Add("trade_no" ,this.TradeNo);
+            paramters.Add("ware_location" ,this.WareLocation);
             paramters.Add("cid" ,this.Cid);
             paramters.Add("shop_category" ,this.ShopCategory);
             paramters.Add("title" ,this.Title);
