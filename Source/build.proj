@@ -8,7 +8,7 @@
         <ReleaseFolder>$(MSBuildProjectDirectory)\..\Releases</ReleaseFolder>
         <!--<BuildPlatform Condition="$(ProgramW6432) != ''">x64</BuildPlatform>
         <BuildPlatform Condition="$(BuildPlatform) == ''">x86</BuildPlatform>-->
-        <Version>2014.04.12</Version>
+        <Version>2014.04.15</Version>
     </PropertyGroup>
 
     <Import Project="$(MSBuildProjectDirectory)\libs\msbuild\MSBuild.Community.Tasks.Targets"/>

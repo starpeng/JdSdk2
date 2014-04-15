@@ -10,7 +10,7 @@ namespace JdSdk.Response.Order
 ﻿    [Serializable]
     public class OrderSearchResponse : JdResponse
     {
-        [JsonProperty("orderresult")]
+        [JsonProperty("order_search")]
         public OrderResult OrderResult
         {
             get;
