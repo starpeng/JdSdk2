@@ -4,10 +4,13 @@ using Newtonsoft.Json;
 namespace JdSdk
 {
     /// <summary>
-    /// 
+    /// 访问令牌
     /// </summary>
     public class AccessToken
     {
+        /// <summary>
+        /// 访问令牌
+        /// </summary>
         [JsonProperty("access_token")]
         public String Token
         {
@@ -15,6 +18,9 @@ namespace JdSdk
             internal set;
         }
 
+        /// <summary>
+        /// 错误代码
+        /// </summary>
         [JsonProperty("code")]
         public String Code
         {
@@ -22,7 +28,9 @@ namespace JdSdk
             internal set;
         }
 
-
+        /// <summary>
+        /// 失效时间（秒）
+        /// </summary>
         [JsonProperty("expires_in")]
         public Int32 ExpiresIn
         {
@@ -30,6 +38,9 @@ namespace JdSdk
             internal set;
         }
 
+        /// <summary>
+        /// 刷新令牌
+        /// </summary>
         [JsonProperty("refresh_token")]
         public String RefreshToken
         {
@@ -37,6 +48,9 @@ namespace JdSdk
             internal set;
         }
 
+        /// <summary>
+        /// 在此时间内允许重置token（毫秒）
+        /// </summary>
         [JsonProperty("time")]
         public String Time
         {
@@ -44,6 +58,9 @@ namespace JdSdk
             internal set;
         }
 
+        /// <summary>
+        /// 令牌类型
+        /// </summary>
         [JsonProperty("token_type")]
         public String TokenType
         {
@@ -60,6 +77,18 @@ namespace JdSdk
             get;
             internal set;
         }
+
+        /// <summary>
+        /// 授权用户对应的京东ID
+        /// </summary>
+        [JsonProperty("uid")]
+        public String Uid { get; set; }
+
+        /// <summary>
+        /// 授权用户对应的京东昵称
+        /// </summary>
+        [JsonProperty("user_nick")]
+        public String UserNick { get; set; }
 
         /// <summary>
         /// 创建时间，获取的时间
