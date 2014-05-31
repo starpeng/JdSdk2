@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JdSdk.Net20", "JdSdk\JdSdk.Net20.csproj", "{D3113D66-9A77-487A-99F8-528C0F763C60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JdSdk.Net40", "JdSdk\JdSdk.Net40.csproj", "{0FA1DBF5-012F-47EA-A02A-82FBEF87EB5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3113D66-9A77-487A-99F8-528C0F763C60} = {D3113D66-9A77-487A-99F8-528C0F763C60}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -189,6 +189,9 @@
     <Compile Include="domain\website\ware\Sku.cs" />
     <Compile Include="domain\website\ware\Ware.cs" />
     <Compile Include="domain\website\ware\WareImg.cs" />
+    <Compile Include="domain\weigou\PaymentShipmentExportService\CombinationPaymentVO.cs" />
+    <Compile Include="domain\weigou\PaymentShipmentExportService\GetPaymentListResult.cs" />
+    <Compile Include="domain\weigou\PaymentShipmentExportService\PaymentVO.cs" />
     <Compile Include="domain\wms\WmsProductionServices\ReceivingTask.cs" />
     <Compile Include="domain\wms\WmsProductionServices\ResponseOrderOtherDetail.cs" />
     <Compile Include="domain\zhijian\QTArticleService\QTArticle.cs" />
@@ -519,6 +522,7 @@
     <Compile Include="request\website\ware\WareGetRequest.cs" />
     <Compile Include="request\website\ware\WareSearchByCidRequst.cs" />
     <Compile Include="request\website\ware\WareSearchRequst.cs" />
+    <Compile Include="request\weigou\OrderPaymentGetRequest.cs" />
     <Compile Include="request\wms\LogisticsCarriersListRequest.cs" />
     <Compile Include="request\wms\LogisticsOrderAddRequest.cs" />
     <Compile Include="request\wms\LogisticsOrderDeleteRequest.cs" />
@@ -1028,6 +1032,7 @@
     <Compile Include="response\website\ware\WareGetResponse.cs" />
     <Compile Include="response\website\ware\WareSearchByCidResponse.cs" />
     <Compile Include="response\website\ware\WareSearchResponse.cs" />
+    <Compile Include="response\weigou\OrderPaymentGetResponse.cs" />
     <Compile Include="response\wms\CarriersDetail.cs" />
     <Compile Include="response\wms\HashMap.cs" />
     <Compile Include="response\wms\LogisticsCarriersListResponse.cs" />
