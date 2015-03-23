@@ -247,6 +247,7 @@
     <Compile Include="request\cps\UnionGoodsCodeGetRequest.cs" />
     <Compile Include="request\cps\UnionMasterAccountGetRequest.cs" />
     <Compile Include="request\cps\UnionMasterBillSearchRequest.cs" />
+    <Compile Include="request\cps\UnionOrderServiceQueryOrdersRequest.cs" />
     <Compile Include="request\cps\UnionPlanbaseinfoGetRequest.cs" />
     <Compile Include="request\cps\UnionPlandetailGetRequest.cs" />
     <Compile Include="request\cps\UnionPlanlistSearchRequest.cs" />
@@ -608,6 +609,7 @@
     <Compile Include="response\cps\UnionGoodsCodeGetResponse.cs" />
     <Compile Include="response\cps\UnionMasterAccountGetResponse.cs" />
     <Compile Include="response\cps\UnionMasterBillSearchResponse.cs" />
+    <Compile Include="response\cps\UnionOrderServiceQueryOrdersResponse.cs" />
     <Compile Include="response\cps\UnionPlan.cs" />
     <Compile Include="response\cps\UnionPlanActivity.cs" />
     <Compile Include="response\cps\UnionPlanbaseinfoGetResponse.cs" />
