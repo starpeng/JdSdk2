@@ -77,7 +77,7 @@ namespace JdSdk
                 {
                     result.Append("0");
                 }
-                result.Append(hex);
+                result.Append(hex.ToUpper());
             }
 
             return result.ToString();
