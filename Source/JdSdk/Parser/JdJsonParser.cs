@@ -12,15 +12,35 @@ namespace JdSdk.Parser
     {
         public T Parse(string body)
         {
+            var isUnionQueryOrders = body.StartsWith("{\"jingdong_UnionOrderService_queryOrders_responce");
+            var isUnionGetCode = body.StartsWith("{\"jingdong_service_promotion_getcode_responce");
             T rsp = null;
             JObject json = JObject.Parse(body);
             if (json != null && json.First != null)
             {
-                JObject data = (JObject)json.First.First;
-                if (data != null)
+             
+                if (isUnionQueryOrders)
                 {
+                    var dataStr = json["jingdong_UnionOrderService_queryOrders_responce"]["queryorders_result"];
+                    var data = JObject.Parse(dataStr.ToString());
                     rsp = data.ToObject<T>(GetJsonSerializer());
                 }
+                else if (isUnionGetCode)
+                {
+                    var dataStr = json["jingdong_service_promotion_getcode_responce"]["queryjs_result"];
+                    var data = JObject.Parse(dataStr.ToString());
+                    rsp = data.ToObject<T>(GetJsonSerializer());
+                }
+                else
+                {
+                    var data = (JObject) json.First.First;
+                   
+                    if (data != null)
+                    {
+                        rsp = data.ToObject<T>(GetJsonSerializer());
+                    }
+                }
+
             }
 
             if (rsp == null)
