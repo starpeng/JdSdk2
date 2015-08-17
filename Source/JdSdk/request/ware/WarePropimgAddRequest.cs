@@ -49,7 +49,7 @@ namespace JdSdk.Request.Ware
         public IDictionary<String, FileItem> GetFileParameters()
         {
             Dictionary<String, FileItem> paramters = new Dictionary<String, FileItem>();
-            paramters.Add("" ,this.Image);
+            paramters.Add("image", this.Image);
             return paramters;
         }
 

@@ -10,7 +10,7 @@ namespace JdSdk.Response.Category
     public class CategoryAttributeSearchResponse : JdResponse
     {
         [JsonProperty("attributes")]
-        public List<Attribute> Attributes
+        public List<attribute> Attributes
         {
             get;
             set;
@@ -24,7 +24,7 @@ namespace JdSdk.Response.Category
         }
 
 ﻿        [Serializable]
-        public class Attribute : JdObject
+        public class attribute : JdObject
         {
             [JsonProperty("aid")]
             public Nullable<Int64> Aid
